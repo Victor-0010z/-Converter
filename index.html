@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>$Converter</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <!-- Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>$Converter</h1>
+        </header>
+
+        <main>
+            <form id="form">
+                <section class="inputs-container">
+
+                    <div class="form-group">
+                        <label for="value-real">Valor a ser convertido (R$)</label>
+                        <input type="number" name="value-real" id="value-real" placeholder="R$20,00" max="1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="currency">Escolha a moeda</label>
+                        <select id="currency">
+                            <option value="">Seelecione...</option>
+                            <option value="euro">Euro</option>
+                            <option value="dol">Dólar</option>
+                        </select>
+                    </div>
+
+                </section>
+
+                <button type="submit">Converter</button>
+            </form>
+
+            <h2 id="result"></h2>
+        </main>
+
+        <footer>
+            <span>
+                &copy; $Converter, 2024. Todos os direitos reservados
+            </span>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
